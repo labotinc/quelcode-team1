@@ -15,43 +15,50 @@
 
 $cakeDescription = 'CakePHP: the rapid development php framework';
 ?>
+<?php
+echo $this->Html->css('stylesheet');
+?>
 <!DOCTYPE html>
-<html>
-<head>
-    <?= $this->Html->charset() ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <?= $cakeDescription ?>:
-        <?= $this->fetch('title') ?>
-    </title>
-    <?= $this->Html->meta('icon') ?>
-
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('style.css') ?>
-
-    <?= $this->fetch('meta') ?>
-    <?= $this->fetch('css') ?>
-    <?= $this->fetch('script') ?>
-</head>
-<body>
-    <nav class="top-bar expanded" data-topbar role="navigation">
-        <ul class="title-area large-3 medium-4 columns">
-            <li class="name">
-                <h1><a href=""><?= $this->fetch('title') ?></a></h1>
-            </li>
-        </ul>
-        <div class="top-bar-section">
-            <ul class="right">
-                <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
-                <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
-            </ul>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>index</title>
+    </head>
+    <header>
+        <div class="header-container">
+            <p class="header-left"><span>QUEL</span> CINEMAS</p>
+            <nav>
+                <ul class="header-center">
+                    <li><a href="#" class="header-top">トップ</a></li>
+                    <li>
+                        <a href="#" class="header-cinema">上映スケジュール</a>
+                    </li>
+                    <li><a href="#" class="header-pay">料金・割引</a></li>
+                </ul>
+            </nav>
+            <nav class="header-right">
+                <a href="#">ログイン</a>
+            </nav>
         </div>
-    </nav>
-    <?= $this->Flash->render() ?>
+    </header>
     <div class="container clearfix">
         <?= $this->fetch('content') ?>
     </div>
     <footer>
+        <div class="footer-container">
+            <p class="footer-left">QUEL CINEMAS</p>
+            <ul class="footer-right">
+                <li>
+                    <a href="#" class="footer-top">トップ<span>|</span></a>
+                </li>
+                <li>
+                    <a href="#" class="footer-cinema"
+                        >上映スケジュール<span>|</span></a>
+                </li>
+                <li><a href="#" class="footer-pay">料金・割引</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

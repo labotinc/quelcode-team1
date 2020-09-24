@@ -13,7 +13,7 @@ ul {
 .header-container {
     font-family: Noto Sans;
     font-size: 8px;
-    height: 36px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,10 +31,10 @@ ul {
 }
 .header-center {
     display: flex;
-    margin-right: 50em;
+    margin-right: 80em;
 }
 .header-center li {
-    margin-right: 4em;
+    margin-right: 8em;
 }
 .header-right {
     padding: 0.5em 2em;
@@ -48,7 +48,7 @@ ul {
     font-size: 8px;
     position: absolute;
     bottom: 0;
-    height: 84px;
+    height: 126px;
     width: 100%;
     font-family: Noto Sans;
     display: flex;
